@@ -12,7 +12,7 @@ class RecipeApp extends StatelessWidget {
     return MaterialApp(
       theme: ThemeData.dark(),
       debugShowCheckedModeBanner: false,
-      title: title,
+      title: AppTheme.title,
       home: const HomeScreen(),
     );
   }

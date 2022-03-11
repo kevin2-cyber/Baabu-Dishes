@@ -1,3 +1,4 @@
 
-
-const title = 'Baabu-Dishes';
+class AppTheme {
+  static const title = 'Baabu-Dishes';
+}
