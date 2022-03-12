@@ -12,9 +12,9 @@ class RecipeApp extends StatelessWidget {
   Widget build(BuildContext context) {
 
     return MaterialApp(
-      theme: AppTheme.themeData,
+      theme: AppTheme.kthemeData,
       debugShowCheckedModeBanner: false,
-      title: AppConstants.title,
+      title: AppConstants.ktitle,
       home: const HomeScreen(),
     );
   }

@@ -11,7 +11,7 @@ class HomeScreen extends StatelessWidget {
       appBar: PreferredSize(
         preferredSize: const Size.fromHeight(50),
         child: AppBar(
-          backgroundColor: AppConstants.darkAppBarColor,
+          backgroundColor: AppConstants.kdarkAppBarColor,
           title: Center(
             child: Text(
                 'Hello World',
