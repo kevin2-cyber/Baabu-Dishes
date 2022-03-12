@@ -1,6 +1,6 @@
-
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
+import 'package:modern_recipe_app/constants-and-themes/constants.dart';
 
 class AppTheme {
   static TextTheme lightTextTheme = TextTheme(
@@ -35,31 +35,30 @@ class AppTheme {
     bodyText1: GoogleFonts.poppins(
       fontSize: 14.0,
       fontWeight: FontWeight.w700,
-      color: Colors.white,
+      color: AppConstants.darkThemeTextColor,
     ),
     headline1: GoogleFonts.poppins(
       fontSize: 32.0,
       fontWeight: FontWeight.bold,
-      color: Colors.white,
+      color: AppConstants.darkThemeTextColor,
     ),
     headline2: GoogleFonts.poppins(
       fontSize: 21.0,
       fontWeight: FontWeight.w700,
-      color: Colors.white,
+      color: AppConstants.darkThemeTextColor,
     ),
     headline3: GoogleFonts.poppins(
       fontSize: 16.0,
       fontWeight: FontWeight.w600,
-      color: Colors.white,
+      color: AppConstants.darkThemeTextColor,
     ),
     headline6: GoogleFonts.poppins(
       fontSize: 20.0,
       fontWeight: FontWeight.w600,
-      color: Colors.white,
+      color: AppConstants.darkThemeTextColor,
     ),
   );
-  static const bgColor = Color(0xFF315ad6);
   static final ThemeData themeData = ThemeData.dark().copyWith(
-    scaffoldBackgroundColor: bgColor,
+    scaffoldBackgroundColor: AppConstants.bgColor,
   );
 }
