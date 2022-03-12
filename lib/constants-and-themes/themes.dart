@@ -87,7 +87,7 @@ class AppTheme {
       data: ThemeData(
         splashColor: Colors.amberAccent
       ),
-      child: Center(),
+      child: const Center(),
     );
   } 
 }
