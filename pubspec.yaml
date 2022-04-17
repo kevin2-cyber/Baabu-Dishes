@@ -1,5 +1,5 @@
 name: modern_recipe_app
-description: A new Flutter project.
+description: A modern recipe app built to upgrade my skills in flutter.
 
 
 publish_to: 'none' # Remove this line if you wish to publish to pub.dev
@@ -17,6 +17,7 @@ dependencies:
 
   cupertino_icons: ^1.0.2
   google_fonts: ^2.3.1
+  provider: ^6.0.2
 
 dev_dependencies:
   flutter_test:
