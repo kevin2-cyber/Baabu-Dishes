@@ -79,9 +79,9 @@ class AppTheme {
   );
 
   static const ktitle = 'Baabu-Dishes';
-  static const kbgColor = Color(0xFF315ad6);
-  static const kdarkAppBarColor = Color(0xFF3675db);
-  static const kdarkThemeTextColor = Color(0xFFbabdf2);
+  static const kbgColor = Color.fromARGB(255, 3, 12, 41);
+  static const kdarkAppBarColor = Color.fromARGB(255, 7, 27, 59);
+  static const kdarkThemeTextColor = Color.fromARGB(255, 198, 200, 239);
 
   static final ThemeData kthemeData = ThemeData.dark().copyWith(
     scaffoldBackgroundColor: kbgColor,
