@@ -83,10 +83,6 @@ class AppTheme {
   static const kdarkAppBarColor = Color.fromARGB(255, 7, 27, 59);
   static const kdarkThemeTextColor = Color.fromARGB(255, 179, 180, 210);
 
-  static final ThemeData kthemeData = ThemeData.dark().copyWith(
-    scaffoldBackgroundColor: kbgColor,
-  );
-
   static Theme kdarkTheme() {
     return Theme(
       data: ThemeData(splashColor: Colors.amberAccent),
