@@ -9,11 +9,10 @@ class RecipeApp extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return MaterialApp(
+    return const MaterialApp(
       debugShowCheckedModeBanner: false,
-      theme: AppTheme.kthemeData,
       title: AppTheme.ktitle,
-      home: const HomeScreen(),
+      home: HomeScreen(),
     );
   }
 }
