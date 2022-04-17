@@ -10,12 +10,6 @@ class HomeScreen extends StatelessWidget {
       appBar: AppBar(
         elevation: 0,
         backgroundColor: Colors.transparent,
-        title: Center(
-          child: Text(
-            'Welcome to my kitchen of recipes',
-            style: AppTheme.darkTextTheme.headline6,
-          ),
-        ),
       ),
       body: Container(),
     );
