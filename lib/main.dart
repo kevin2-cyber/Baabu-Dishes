@@ -1,5 +1,4 @@
-import'package:flutter/material.dart';
-import 'package:modern_recipe_app/constants-and-themes/constants.dart';
+import 'package:flutter/material.dart';
 import 'package:modern_recipe_app/constants-and-themes/themes.dart';
 import 'package:modern_recipe_app/screens/home_screen.dart';
 
@@ -10,11 +9,10 @@ class RecipeApp extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-
     return MaterialApp(
       theme: AppTheme.kthemeData,
       debugShowCheckedModeBanner: false,
-      title: AppConstants.ktitle,
+      title: AppTheme.ktitle,
       home: const HomeScreen(),
     );
   }
