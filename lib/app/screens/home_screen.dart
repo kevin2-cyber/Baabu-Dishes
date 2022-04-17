@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:modern_recipe_app/constants-and-themes/themes.dart';
+import '../../core/theme/themes.dart';
 
 class HomeScreen extends StatelessWidget {
   const HomeScreen({Key? key}) : super(key: key);

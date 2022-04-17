@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:modern_recipe_app/constants-and-themes/themes.dart';
-import 'package:modern_recipe_app/screens/home_screen.dart';
+import 'app/screens/home_screen.dart';
+import 'core/theme/themes.dart';
 
 void main() => runApp(const RecipeApp());
 
