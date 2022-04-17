@@ -13,7 +13,7 @@ class HomeScreen extends StatelessWidget {
           backgroundColor: AppTheme.kdarkAppBarColor,
           title: Center(
             child: Text(
-              'Hello World',
+              'Welcome to my kitchen of recipes',
               style: AppTheme.darkTextTheme.headline6,
             ),
           ),
