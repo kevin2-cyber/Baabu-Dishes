@@ -7,16 +7,13 @@ class HomeScreen extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: PreferredSize(
-        preferredSize: const Size.fromHeight(50),
-        child: AppBar(
-          elevation: 0,
-          backgroundColor: AppTheme.kdarkAppBarColor,
-          title: Center(
-            child: Text(
-              'Welcome to my kitchen of recipes',
-              style: AppTheme.darkTextTheme.headline6,
-            ),
+      appBar: AppBar(
+        elevation: 0,
+        backgroundColor: Colors.transparent,
+        title: Center(
+          child: Text(
+            'Welcome to my kitchen of recipes',
+            style: AppTheme.darkTextTheme.headline6,
           ),
         ),
       ),
