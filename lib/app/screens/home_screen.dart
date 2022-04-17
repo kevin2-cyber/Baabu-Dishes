@@ -12,7 +12,10 @@ class HomeScreen extends StatelessWidget {
           gradient: LinearGradient(
             begin: Alignment.topLeft,
             end: Alignment.bottomLeft,
-            colors: [Colors.purpleAccent, Colors.orangeAccent],
+            colors: [
+              Color.fromARGB(255, 79, 25, 88),
+              Color.fromARGB(255, 73, 51, 22)
+            ],
           ),
         ),
       ),
