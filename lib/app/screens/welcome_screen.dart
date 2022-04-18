@@ -1,4 +1,7 @@
 import 'package:flutter/material.dart';
+import 'package:modern_recipe_app/app/screens/home_screen.dart';
+import 'package:modern_recipe_app/app/widgets/background_image.dart';
+import 'package:modern_recipe_app/core/theme/theme.dart';
 
 class WelcomeScreen extends StatefulWidget {
   const WelcomeScreen({Key? key}) : super(key: key);
@@ -11,43 +14,33 @@ class _WelcomeScreenState extends State<WelcomeScreen> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      body: Container(
-        height: MediaQuery.of(context).size.height,
-        width: MediaQuery.of(context).size.width,
-        decoration: const BoxDecoration(
-          image: DecorationImage(
-            image: AssetImage('assets/images/sandwich.jpg'),
-            fit: BoxFit.cover,
-          ),
-        ),
-        child: Stack(
-          children: [
-            MaterialButton(
-              onPressed: () {},
-              color: const Color.fromARGB(255, 141, 49, 42),
+      body: Stack(
+        children: [
+          const BackgroundImage(),
+          Positioned(
+            top: 600,
+            left: 150,
+            right: 150,
+            child: MaterialButton(
+              height: 50,
+              minWidth: 200,
+              shape: const StadiumBorder(),
+              color: const Color.fromARGB(255, 4, 29, 50),
+              onPressed: () {
+                Navigator.push(
+                  context,
+                  MaterialPageRoute(
+                    builder: (context) => const HomeScreen(),
+                  ),
+                );
+              },
+              child: Text(
+                'Welcome',
+                style: AppTheme.darkTextTheme.bodyText1,
+              ),
             ),
-          ],
-        ),
-      ),
-    );
-  }
-
-  Widget backgroundImage() {
-    return ShaderMask(
-      shaderCallback: (bounds) => const LinearGradient(
-        colors: [Colors.black, Colors.black12],
-        begin: Alignment.bottomCenter,
-        end: Alignment.center,
-      ).createShader(bounds),
-      blendMode: BlendMode.darken,
-      child: Container(
-        decoration: const BoxDecoration(
-          image: DecorationImage(
-            image: AssetImage('assets/images/sandwich.jpg'),
-            fit: BoxFit.cover,
-            colorFilter: ColorFilter.mode(Colors.black45, BlendMode.darken),
           ),
-        ),
+        ],
       ),
     );
   }
