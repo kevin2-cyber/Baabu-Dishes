@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'app/screens/home_screen.dart';
-import 'core/theme/themes.dart';
+import 'core/theme/theme.dart';
 
 void main() => runApp(const RecipeApp());
 
