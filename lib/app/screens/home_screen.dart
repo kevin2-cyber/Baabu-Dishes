@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import '../../core/theme/themes.dart';
 
 class HomeScreen extends StatelessWidget {
   const HomeScreen({Key? key}) : super(key: key);
@@ -17,6 +16,9 @@ class HomeScreen extends StatelessWidget {
               Color.fromARGB(122, 254, 144, 0)
             ],
           ),
+        ),
+        child: Row(
+          children: const <Widget>[],
         ),
       ),
     );
