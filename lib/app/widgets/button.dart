@@ -1,11 +1,16 @@
 import 'package:flutter/material.dart';
-
 import '../../core/theme/theme.dart';
-import '../screens/home_screen.dart';
 
 class AppButton extends StatelessWidget {
+  final Color bgColor;
+  final Function() onPressed;
+  final String text;
+
   const AppButton({
     Key? key,
+    required this.bgColor,
+    required this.onPressed,
+    required this.text,
   }) : super(key: key);
 
   @override
@@ -14,17 +19,10 @@ class AppButton extends StatelessWidget {
       height: 50,
       minWidth: 200,
       shape: const StadiumBorder(),
-      color: const Color.fromARGB(255, 4, 29, 50),
-      onPressed: () {
-        Navigator.push(
-          context,
-          MaterialPageRoute(
-            builder: (context) => const HomeScreen(),
-          ),
-        );
-      },
+      color: bgColor,
+      onPressed: onPressed,
       child: Text(
-        'Welcome',
+        text,
         style: AppTheme.darkTextTheme.bodyText1,
       ),
     );

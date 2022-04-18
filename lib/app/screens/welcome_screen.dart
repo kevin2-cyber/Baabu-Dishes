@@ -1,9 +1,7 @@
 import 'package:flutter/material.dart';
-import 'package:modern_recipe_app/app/screens/home_screen.dart';
-import 'package:modern_recipe_app/app/widgets/background_image.dart';
+import 'package:modern_recipe_app/app/screens/screens.dart';
 import 'package:modern_recipe_app/core/theme/theme.dart';
-
-import '../widgets/button.dart';
+import '../widgets/widgets.dart';
 
 class WelcomeScreen extends StatefulWidget {
   const WelcomeScreen({Key? key}) : super(key: key);
@@ -27,11 +25,20 @@ class _WelcomeScreenState extends State<WelcomeScreen> {
               style: AppTheme.darkTextTheme.headline1,
             ),
           ),
-          const Positioned(
+          Positioned(
             top: 600,
             left: 150,
             right: 150,
-            child: AppButton(),
+            child: AppButton(
+              bgColor: AppTheme.kdarkButtonColor,
+              onPressed: () {
+                Navigator.push(
+                    context,
+                    MaterialPageRoute(
+                        builder: (context) => const HomeScreen()));
+              },
+              text: 'Welcome',
+            ),
           ),
         ],
       ),

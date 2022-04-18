@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/flutter_svg.dart';
-
+import 'package:modern_recipe_app/app/widgets/button.dart';
 import '../../core/theme/theme.dart';
 
 class HomeScreen extends StatelessWidget {
@@ -27,18 +27,10 @@ class HomeScreen extends StatelessWidget {
               top: 600,
               left: 150,
               right: 150,
-              child: MaterialButton(
-                height: 50,
-                minWidth: 200,
-                shape: const StadiumBorder(),
-                color: const Color.fromARGB(255, 4, 29, 50),
-                onPressed: () {
-                  Navigator.pop(context);
-                },
-                child: Text(
-                  'Back to Welcome',
-                  style: AppTheme.darkTextTheme.bodyText1,
-                ),
+              child: AppButton(
+                bgColor: AppTheme.kdarkButtonColor,
+                onPressed: () {},
+                text: 'Back to Home',
               ),
             ),
           ],
