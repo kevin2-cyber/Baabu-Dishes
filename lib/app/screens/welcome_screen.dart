@@ -18,6 +18,14 @@ class _WelcomeScreenState extends State<WelcomeScreen> {
         children: [
           const BackgroundImage(),
           Positioned(
+            top: 60,
+            left: 150,
+            child: Text(
+              'Baabu Dishes',
+              style: AppTheme.darkTextTheme.headline1,
+            ),
+          ),
+          Positioned(
             top: 600,
             left: 150,
             right: 150,
