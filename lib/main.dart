@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'app/screens/home_screen.dart';
+import 'app/screens/screens.dart';
 import 'core/theme/theme.dart';
 
 void main() => runApp(const RecipeApp());
