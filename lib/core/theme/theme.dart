@@ -80,8 +80,8 @@ class AppTheme {
 
   static const ktitle = 'Baabu Dishes';
   static const kdarkButtonColor = Color.fromARGB(255, 4, 29, 50);
-  static const kbgColor = Color.fromARGB(255, 1, 4, 14);
-  static const kdarkAppBarColor = Color.fromARGB(255, 7, 27, 59);
+  static const kbgColor = Color.fromARGB(173, 18, 1, 143);
+  static const kdarkBgColor = Color.fromARGB(153, 2, 9, 214);
   static const kdarkThemeTextColor = Color.fromARGB(255, 179, 180, 210);
 
   static Theme kdarkTheme() {

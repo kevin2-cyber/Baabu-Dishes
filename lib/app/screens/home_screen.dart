@@ -15,8 +15,8 @@ class HomeScreen extends StatelessWidget {
             begin: Alignment.topLeft,
             end: Alignment.bottomLeft,
             colors: [
-              Color.fromARGB(153, 2, 9, 214),
-              Color.fromARGB(173, 18, 1, 143)
+              AppTheme.kdarkBgColor,
+              AppTheme.kbgColor,
             ],
           ),
         ),
