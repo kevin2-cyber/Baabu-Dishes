@@ -30,6 +30,7 @@ class HomeScreen extends StatelessWidget {
               left: 100,
               right: 100,
               child: AppButton(
+                icon: Icons.arrow_back_ios,
                 bgColor: AppTheme.kdarkButtonColor,
                 onPressed: () {
                   Navigator.pop(context);

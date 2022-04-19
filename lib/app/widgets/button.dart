@@ -5,12 +5,14 @@ class AppButton extends StatelessWidget {
   final Color bgColor;
   final Function() onPressed;
   final String text;
+  final IconData? icon;
 
   const AppButton({
     Key? key,
     required this.bgColor,
     required this.onPressed,
     required this.text,
+    this.icon,
   }) : super(key: key);
 
   @override
@@ -21,9 +23,17 @@ class AppButton extends StatelessWidget {
       shape: const StadiumBorder(),
       color: bgColor,
       onPressed: onPressed,
-      child: Text(
-        text,
-        style: AppTheme.darkTextTheme.bodyText1,
+      child: Row(
+        children: [
+          Icon(icon),
+         const SizedBox(
+            width: 15.0,
+          ),
+          Text(
+            text,
+            style: AppTheme.darkTextTheme.bodyText1,
+          ),
+        ],
       ),
     );
   }
