@@ -29,6 +29,14 @@ class _WelcomeScreenState extends State<WelcomeScreen> {
               ),
             ),
             Positioned(
+              top: 130,
+              left: 100,
+              child: Text(
+                  'Best Dishes around the globe.',
+                style: AppTheme.darkTextTheme.bodyText1,
+              ),
+            ),
+            Positioned(
               top: 700,
               left: 100,
               right: 100,
