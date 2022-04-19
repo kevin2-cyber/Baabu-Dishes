@@ -10,6 +10,8 @@ class HomeScreen extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       body: Container(
+        height: MediaQuery.of(context).size.height,
+        width: MediaQuery.of(context).size.width,
         decoration: const BoxDecoration(
           gradient: LinearGradient(
             begin: Alignment.topLeft,
@@ -24,9 +26,9 @@ class HomeScreen extends StatelessWidget {
           children: [
             SvgPicture.asset('assets/svg/chef.svg'),
             Positioned(
-              top: 600,
-              left: 150,
-              right: 150,
+              top: 700,
+              left: 100,
+              right: 100,
               child: AppButton(
                 bgColor: AppTheme.kdarkButtonColor,
                 onPressed: () {

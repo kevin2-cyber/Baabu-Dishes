@@ -14,33 +14,37 @@ class _WelcomeScreenState extends State<WelcomeScreen> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      body: Stack(
-        children: [
-          const BackgroundImage(),
-          Positioned(
-            top: 60,
-            left: 150,
-            child: Text(
-              'Baabu Dishes',
-              style: AppTheme.darkTextTheme.headline1,
+      body: SizedBox(
+        height: MediaQuery.of(context).size.height,
+        width: MediaQuery.of(context).size.width,
+        child: Stack(
+          children: [
+            const BackgroundImage(),
+            Positioned(
+              top: 80,
+              left: 100,
+              child: Text(
+                'Baabu Dishes',
+                style: AppTheme.darkTextTheme.headline1,
+              ),
             ),
-          ),
-          Positioned(
-            top: 600,
-            left: 150,
-            right: 150,
-            child: AppButton(
-              bgColor: AppTheme.kdarkButtonColor,
-              onPressed: () {
-                Navigator.push(
-                    context,
-                    MaterialPageRoute(
-                        builder: (context) => const HomeScreen()));
-              },
-              text: 'Welcome',
+            Positioned(
+              top: 700,
+              left: 100,
+              right: 100,
+              child: AppButton(
+                bgColor: AppTheme.kdarkButtonColor,
+                onPressed: () {
+                  Navigator.push(
+                      context,
+                      MaterialPageRoute(
+                          builder: (context) => const HomeScreen()));
+                },
+                text: 'Welcome',
+              ),
             ),
-          ),
-        ],
+          ],
+        ),
       ),
     );
   }
