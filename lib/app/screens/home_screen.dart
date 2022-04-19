@@ -29,7 +29,9 @@ class HomeScreen extends StatelessWidget {
               right: 150,
               child: AppButton(
                 bgColor: AppTheme.kdarkButtonColor,
-                onPressed: () {},
+                onPressed: () {
+                  Navigator.pop(context);
+                },
                 text: 'Back to Home',
               ),
             ),
