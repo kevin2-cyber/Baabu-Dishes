@@ -1,7 +1,7 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="baabu.dishes.modern_recipe_app">
    <application
-        android:label="modern_recipe_app"
+        android:label="Baabu Dishes"
         android:name="${applicationName}"
         android:icon="@mipmap/ic_launcher">
         <activity
