@@ -25,7 +25,10 @@ class AppButton extends StatelessWidget {
       onPressed: onPressed,
       child: Row(
         children: [
-          Icon(icon),
+          Icon(
+              icon,
+            size: 20,
+          ),
          const SizedBox(
             width: 15.0,
           ),
