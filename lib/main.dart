@@ -1,8 +1,7 @@
 import 'package:flutter/material.dart';
-import 'app/screens/screens.dart';
-import 'core/theme/theme.dart';
+import '../core/theme/theme.dart';
 
-void main() => runApp(const RecipeApp());
+Future<void> main() async { runApp(const RecipeApp()); }
 
 class RecipeApp extends StatelessWidget {
   const RecipeApp({Key? key}) : super(key: key);
@@ -10,10 +9,17 @@ class RecipeApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      debugShowCheckedModeBanner: false,
-      theme: ThemeData.dark(),
       title: AppTheme.ktitle,
-      home: const WelcomeScreen(),
+      debugShowCheckedModeBanner: false,
+      theme: ThemeData(
+        brightness: Brightness.light,
+        primaryColor: Colors.white,
+        primarySwatch: Colors.blue,
+        visualDensity: VisualDensity.adaptivePlatformDensity,
+      ),
     );
   }
 }
+
+
+
