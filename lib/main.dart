@@ -13,7 +13,7 @@ class RecipeApp extends StatelessWidget {
       debugShowCheckedModeBanner: false,
       theme: ThemeData(
         brightness: Brightness.light,
-        primaryColor: Colors.white,
+        primaryColor: AppTheme.kdarkThemeTextColor,
         primarySwatch: Colors.blue,
         visualDensity: VisualDensity.adaptivePlatformDensity,
       ),
