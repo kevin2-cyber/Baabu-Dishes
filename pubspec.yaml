@@ -52,4 +52,7 @@ flutter:
   assets:
     - assets/images/
     - assets/svg/
+    - assets/recipes1.json
+    - assets/recipes2.json
+    - assets/svg/
 
