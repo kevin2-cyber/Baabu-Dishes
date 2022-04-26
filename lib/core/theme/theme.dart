@@ -83,6 +83,9 @@ class AppTheme {
   static const kbgColor = Color.fromARGB(173, 19, 12, 78);
   static const kdarkBgColor = Color.fromARGB(153, 14, 76, 199);
   static const kdarkThemeTextColor = Color.fromARGB(255, 179, 180, 210);
+  const Color green = Color(0xff158442);
+  const Color lightGrey = Color(0xff5f6367);
+  const Color shim = Color(0x7f000000);
 
   static Theme kdarkTheme() {
     return Theme(
