@@ -6,8 +6,8 @@ import 'package:provider/provider.dart';
 import '../app/ui/main_screen.dart';
 import 'data/repository.dart';
 import 'data/moor/moor_repository.dart';
-import '../app/network/recipe_service.dart';
-import '../app/network/service_interface.dart';
+// import '../app/network/recipe_service.dart';
+// import '../app/network/service_interface.dart';
 
 Future<void> main() async {
   // Call _setupLogging()
