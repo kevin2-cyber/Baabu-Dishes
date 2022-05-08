@@ -41,11 +41,11 @@ class RecipeApp extends StatelessWidget {
           create: (_) => repository!,
           dispose: (_, Repository repository) => repository.close(),
         ),
-        Provider<ServiceInterface>(
-          create: (_) =>
-          RecipeService.create(),
-          lazy: false,
-        ),
+        // Provider<ServiceInterface>(
+        //   create: (_) =>
+        //       RecipeService.create(),
+        //   lazy: false,
+        // ),
       ],
       child: MaterialApp(
         title: 'Recipes',
