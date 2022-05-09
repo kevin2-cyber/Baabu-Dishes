@@ -1,13 +1,18 @@
+// Dart imports:
 import 'dart:convert';
 import 'dart:math';
 
-import 'package:http/http.dart' as http;
-import 'package:chopper/chopper.dart';
+// Flutter imports:
 import 'package:flutter/services.dart' show rootBundle;
-import '../network/service_interface.dart';
 
+// Package imports:
+import 'package:chopper/chopper.dart';
+import 'package:http/http.dart' as http;
+
+// Project imports:
 import '../network/model_response.dart';
 import '../network/recipe_model.dart';
+import '../network/service_interface.dart';
 
 class MockService implements ServiceInterface{
   late APIRecipeQuery _currentRecipes1;

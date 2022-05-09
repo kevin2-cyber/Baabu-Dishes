@@ -1,4 +1,7 @@
+// Package imports:
 import 'package:moor_flutter/moor_flutter.dart';
+
+// Project imports:
 import '../models/models.dart';
 
 part 'moor_db.g.dart';

@@ -1,4 +1,7 @@
+// Package imports:
 import 'package:chopper/chopper.dart';
+
+// Project imports:
 import 'model_response.dart';
 import 'recipe_model.dart';
 

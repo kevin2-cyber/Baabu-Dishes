@@ -1,9 +1,12 @@
+// Package imports:
 import 'package:chopper/chopper.dart';
 
+// Project imports:
+import 'model_converter.dart';
 import 'model_response.dart';
 import 'recipe_model.dart';
-import 'model_converter.dart';
 import 'service_interface.dart';
+
 part 'recipe_service.chopper.dart';
 
 const String apiKey = '42e9489a8d151c862665c2471e7a75b5';

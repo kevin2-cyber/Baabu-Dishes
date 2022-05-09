@@ -1,4 +1,7 @@
+// Package imports:
 import 'package:equatable/equatable.dart';
+
+// Project imports:
 import 'ingredient.dart';
 
 class Recipe extends Equatable {

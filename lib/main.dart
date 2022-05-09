@@ -1,11 +1,16 @@
+// Flutter imports:
 import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
+
+// Package imports:
 import 'package:logging/logging.dart';
 import 'package:provider/provider.dart';
 
+// Project imports:
 import '../app/ui/main_screen.dart';
-import 'data/repository.dart';
 import 'data/moor/moor_repository.dart';
+import 'data/repository.dart';
+
 // import '../app/network/recipe_service.dart';
 // import '../app/network/service_interface.dart';
 
