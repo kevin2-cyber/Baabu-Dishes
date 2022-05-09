@@ -11,8 +11,8 @@ import '../app/ui/main_screen.dart';
 import 'data/moor/moor_repository.dart';
 import 'data/repository.dart';
 
-// import '../app/network/recipe_service.dart';
-// import '../app/network/service_interface.dart';
+import '../app/network/recipe_service.dart';
+import '../app/network/service_interface.dart';
 
 Future<void> main() async {
   // Call _setupLogging()
@@ -46,11 +46,12 @@ class RecipeApp extends StatelessWidget {
           create: (_) => repository!,
           dispose: (_, Repository repository) => repository.close(),
         ),
-        // Provider<ServiceInterface>(
-        //   create: (_) =>
-        //       RecipeService.create(),
-        //   lazy: false,
-        // ),
+        Provider<ServiceInterface>(
+          create: (_) =>
+              RecipeService
+                  .create(),
+          lazy: false,
+        ),
       ],
       child: MaterialApp(
         title: 'Recipes',

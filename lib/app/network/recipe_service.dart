@@ -15,7 +15,8 @@ const String apiUrl = 'https://api.edamam.com/search';
 
 // Add @ChopperApi() here
 @ChopperApi()
-abstract class RecipeService extends ChopperService implements ServiceInterface {
+abstract class RecipeService extends ChopperService
+    implements ServiceInterface {
   @override
   @Get(path: 'search')
   // ignore: override_on_non_overriding_member
