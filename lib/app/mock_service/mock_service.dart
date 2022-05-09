@@ -25,9 +25,9 @@ class MockService implements ServiceInterface{
   }
 
   void loadRecipes() async {
-    var jsonString = await rootBundle.loadString('assets/recipes1.json');
+    var jsonString = await rootBundle.loadString('assets/json/recipes1.json');
     _currentRecipes1 = APIRecipeQuery.fromJson(jsonDecode(jsonString));
-    jsonString = await rootBundle.loadString('assets/recipes2.json');
+    jsonString = await rootBundle.loadString('assets/json/recipes2.json');
     _currentRecipes2 = APIRecipeQuery.fromJson(jsonDecode(jsonString));
   }
 
