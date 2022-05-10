@@ -24,7 +24,7 @@ class RecipeList extends StatefulWidget {
   const RecipeList({Key? key}) : super(key: key);
 
   @override
-  _RecipeListState createState() => _RecipeListState();
+  State<RecipeList> createState() => _RecipeListState();
 }
 
 class _RecipeListState extends State<RecipeList> {

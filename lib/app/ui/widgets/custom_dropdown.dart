@@ -18,7 +18,7 @@ class CustomDropdownMenuItem<T> extends PopupMenuEntry<T> {
   final Function? callback;
 
   @override
-  _CustomDropdownMenuItemState<T> createState() =>
+  State<CustomDropdownMenuItem<T>> createState() =>
       _CustomDropdownMenuItemState<T>();
 
   @override
