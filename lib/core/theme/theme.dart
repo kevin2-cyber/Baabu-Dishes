@@ -83,17 +83,21 @@ class AppTheme {
 
   static const ktitle = 'Baabu Dishes';
   static const kdarkButtonColor = Color.fromARGB(255, 4, 29, 50);
-  static const kbgColor = Color.fromARGB(173, 19, 12, 78);
-  static const kdarkBgColor = Color.fromARGB(153, 14, 76, 199);
+  static const kbgColor = Color.fromARGB(173, 237, 237, 255);
+  static const kdarkBgColor = Color.fromARGB(153, 28, 33, 45);
   static const kdarkThemeTextColor = Color.fromARGB(255, 179, 180, 210);
   static const Color green = Color(0xff158442);
   static const Color lightGrey = Color(0xff5f6367);
   static const Color shim = Color(0x7f000000);
 
-  static Theme kdarkTheme() {
-    return Theme(
-      data: ThemeData(splashColor: Colors.amberAccent),
-      child: const Center(),
-    );
-  }
+  static final lightTheme = ThemeData(
+    scaffoldBackgroundColor: kbgColor,
+    colorScheme: const ColorScheme.light(),
+    visualDensity: VisualDensity.adaptivePlatformDensity,
+  );
+  static final darkTheme = ThemeData(
+    scaffoldBackgroundColor: kdarkBgColor,
+    colorScheme: const ColorScheme.dark(),
+    visualDensity: VisualDensity.adaptivePlatformDensity,
+  );
 }

@@ -8,6 +8,7 @@ import 'package:provider/provider.dart';
 
 // Project imports:
 import '../app/ui/main_screen.dart';
+import 'core/theme/theme.dart';
 import 'data/moor/moor_repository.dart';
 import 'data/repository.dart';
 
@@ -32,9 +33,15 @@ void _setupLogging() {
   });
 }
 
-class RecipeApp extends StatelessWidget {
+class RecipeApp extends StatefulWidget {
   final Repository? repository;
   const RecipeApp({Key? key, required this.repository}) : super(key: key);
+
+  @override
+  State<RecipeApp> createState() => _RecipeAppState();
+}
+
+class _RecipeAppState extends State<RecipeApp> {
 
   // This widget is the root of your application.
   @override
@@ -43,7 +50,7 @@ class RecipeApp extends StatelessWidget {
       providers: [
         Provider<Repository>(
           lazy: false,
-          create: (_) => repository!,
+          create: (_) => widget.repository!,
           dispose: (_, Repository repository) => repository.close(),
         ),
         Provider<ServiceInterface>(
@@ -54,19 +61,22 @@ class RecipeApp extends StatelessWidget {
         ),
       ],
       child: MaterialApp(
-        title: 'Recipes',
+        title: AppTheme.ktitle,
         debugShowCheckedModeBanner: false,
-        theme: ThemeData(
-          brightness: Brightness.light,
-          primaryColor: Colors.white,
-          primarySwatch: Colors.blue,
-          visualDensity: VisualDensity.adaptivePlatformDensity,
-        ),
+        themeMode: ThemeMode.system,
+        theme: AppTheme.lightTheme,
+        darkTheme: AppTheme.darkTheme,
         home: const MainScreen(),
       ),
     );
   }
 }
 
+// ThemeData(
+// brightness: Brightness.light,
+// primaryColor: Colors.white,
+// primarySwatch: Colors.blue,
+// visualDensity: VisualDensity.adaptivePlatformDensity,
+// ),
 
 
