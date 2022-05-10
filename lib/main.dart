@@ -72,11 +72,5 @@ class _RecipeAppState extends State<RecipeApp> {
   }
 }
 
-// ThemeData(
-// brightness: Brightness.light,
-// primaryColor: Colors.white,
-// primarySwatch: Colors.blue,
-// visualDensity: VisualDensity.adaptivePlatformDensity,
-// ),
 
 
