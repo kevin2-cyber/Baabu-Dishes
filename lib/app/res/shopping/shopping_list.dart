@@ -5,8 +5,8 @@ import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
 
 // Project imports:
-import '../../../data/models/ingredient.dart';
-import '../../../data/repository.dart';
+import '../../data/models/ingredient.dart';
+import '../../data/repository.dart';
 
 class ShoppingList extends StatefulWidget {
   const ShoppingList({Key? key}) : super(key: key);

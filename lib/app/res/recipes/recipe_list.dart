@@ -10,9 +10,9 @@ import 'package:provider/provider.dart';
 import 'package:shared_preferences/shared_preferences.dart';
 
 // Project imports:
-import 'package:modern_recipe_app/data/models/ingredient.dart';
-import '../../../core/theme/theme.dart';
-import '../../../data/models/recipe.dart';
+import '../../data/models/ingredient.dart';
+import '../../core/theme/theme.dart';
+import '../../data/models/recipe.dart';
 import '../../network/model_response.dart';
 import '../../network/recipe_model.dart';
 import '../../network/service_interface.dart';

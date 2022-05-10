@@ -8,8 +8,8 @@ import 'package:flutter_slidable/flutter_slidable.dart';
 import 'package:provider/provider.dart';
 
 // Project imports:
-import '../../../data/models/recipe.dart';
-import '../../../data/repository.dart';
+import '../../data/models/recipe.dart';
+import '../../data/repository.dart';
 
 class MyRecipesList extends StatefulWidget {
   const MyRecipesList({Key? key}) : super(key: key);

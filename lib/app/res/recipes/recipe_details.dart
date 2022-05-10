@@ -7,9 +7,9 @@ import 'package:flutter_svg/flutter_svg.dart';
 import 'package:provider/provider.dart';
 
 // Project imports:
-import 'package:modern_recipe_app/core/theme/theme.dart';
-import '../../../data/models/recipe.dart';
-import '../../../data/repository.dart';
+import '../../core/theme/theme.dart';
+import '../../data/models/recipe.dart';
+import '../../data/repository.dart';
 import '../../network/recipe_model.dart';
 
 class RecipeDetails extends StatelessWidget {

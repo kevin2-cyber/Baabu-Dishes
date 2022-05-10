@@ -2,7 +2,7 @@
 import 'package:json_annotation/json_annotation.dart';
 
 // Project imports:
-import '../../data/models/ingredient.dart';
+import '../data/models/ingredient.dart';
 
 part 'recipe_model.g.dart';
 
