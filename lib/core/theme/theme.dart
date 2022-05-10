@@ -94,10 +94,12 @@ class AppTheme {
     scaffoldBackgroundColor: kbgColor,
     colorScheme: const ColorScheme.light(),
     visualDensity: VisualDensity.adaptivePlatformDensity,
+    textTheme: lightTextTheme,
   );
   static final darkTheme = ThemeData(
     scaffoldBackgroundColor: kdarkBgColor,
     colorScheme: const ColorScheme.dark(),
     visualDensity: VisualDensity.adaptivePlatformDensity,
+    textTheme: darkTextTheme,
   );
 }
