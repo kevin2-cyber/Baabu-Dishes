@@ -63,11 +63,13 @@ class _RecipeAppState extends State<RecipeApp> {
         light: AppTheme.lightTheme,
         dark: AppTheme.darkTheme,
         initial: AdaptiveThemeMode.dark,
-        builder: (light, dark) => const MaterialApp(
+        builder: (light, dark) => MaterialApp(
           title: AppTheme.ktitle,
           debugShowCheckedModeBanner: false,
           themeMode: ThemeMode.system,
-          home: MainScreen(),
+          theme: light,
+          darkTheme: dark,
+          home: const MainScreen(),
         ),
       ),
     );
