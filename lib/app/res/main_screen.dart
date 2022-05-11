@@ -116,8 +116,7 @@ class _MainScreenState extends State<MainScreen> {
         ),
         title: Text(
           title,
-          style: const TextStyle(
-              fontSize: 20, fontWeight: FontWeight.w500, color: Colors.black),
+          style: AppTheme.darkTextTheme.headline1,
         ),
       ),
       body: IndexedStack(
