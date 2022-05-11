@@ -78,7 +78,6 @@ class _MainScreenState extends State<MainScreen> {
         break;
     }
 
-    bool theme = false;
     return Scaffold(
       bottomNavigationBar: BottomNavigationBar(
         items: [
@@ -104,7 +103,7 @@ class _MainScreenState extends State<MainScreen> {
       ),
       appBar: AppBar(
         elevation: 0,
-        backgroundColor: theme ? AppTheme.kbgColor : AppTheme.kdarkBgColor,
+        backgroundColor: Colors.white,
         systemOverlayStyle: const SystemUiOverlayStyle(
           systemNavigationBarColor: Colors.white,
           statusBarColor: Colors.white,
