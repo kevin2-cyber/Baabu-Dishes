@@ -109,6 +109,7 @@ class _MainScreenState extends State<MainScreen> {
           statusBarColor: Colors.white,
           statusBarBrightness: Brightness.light,
           statusBarIconBrightness: Brightness.dark,
+
           systemNavigationBarDividerColor: Colors.white,
           //Navigation bar divider color
           systemNavigationBarIconBrightness:
