@@ -14,7 +14,7 @@ import '../app/data/repository.dart';
 
 import '../app/network/recipe_service.dart';
 import '../app/network/service_interface.dart';
-import 'app/res/main_screen.dart';
+import '../app/res/intro/intro_screen.dart';
 
 Future<void> main() async {
   // Call _setupLogging()
@@ -69,7 +69,7 @@ class _RecipeAppState extends State<RecipeApp> {
           themeMode: ThemeMode.system,
           theme: light,
           darkTheme: dark,
-          home: const MainScreen(),
+          home: const IntroScreen(),
         ),
       ),
     );
