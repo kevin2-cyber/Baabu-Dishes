@@ -43,6 +43,7 @@ dev_dependencies:
   json_serializable: ^6.1.6
   chopper_generator: ^4.0.5
   moor_generator: ^4.6.0+1
+  import_sorter: ^4.6.0
 
 
 flutter:

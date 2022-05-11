@@ -1,19 +1,22 @@
+// Flutter imports:
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
+
+// Package imports:
 import 'package:flutter_svg/flutter_svg.dart';
 import 'package:shared_preferences/shared_preferences.dart';
 
-import '../../core/theme/theme.dart';
+// Project imports:
+import '../core/theme/theme.dart';
 import 'myrecipes/my_recipes_list.dart';
 import 'recipes/recipe_list.dart';
 import 'shopping/shopping_list.dart';
-
 
 class MainScreen extends StatefulWidget {
   const MainScreen({Key? key}) : super(key: key);
 
   @override
-  _MainScreenState createState() => _MainScreenState();
+  State<MainScreen> createState() => _MainScreenState();
 }
 
 class _MainScreenState extends State<MainScreen> {
@@ -74,6 +77,8 @@ class _MainScreenState extends State<MainScreen> {
         title = 'Recipes';
         break;
     }
+
+    bool theme = false;
     return Scaffold(
       bottomNavigationBar: BottomNavigationBar(
         items: [
@@ -99,7 +104,7 @@ class _MainScreenState extends State<MainScreen> {
       ),
       appBar: AppBar(
         elevation: 0,
-        backgroundColor: Colors.white,
+        backgroundColor: theme ? AppTheme.kbgColor : AppTheme.kdarkBgColor,
         systemOverlayStyle: const SystemUiOverlayStyle(
           systemNavigationBarColor: Colors.white,
           statusBarColor: Colors.white,

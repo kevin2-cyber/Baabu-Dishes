@@ -1,4 +1,7 @@
+// Flutter imports:
 import 'package:flutter/material.dart';
+
+// Package imports:
 import 'package:flutter_svg/flutter_svg.dart';
 
 class CustomDropdownMenuItem<T> extends PopupMenuEntry<T> {
@@ -15,7 +18,7 @@ class CustomDropdownMenuItem<T> extends PopupMenuEntry<T> {
   final Function? callback;
 
   @override
-  _CustomDropdownMenuItemState<T> createState() =>
+  State<CustomDropdownMenuItem<T>> createState() =>
       _CustomDropdownMenuItemState<T>();
 
   @override

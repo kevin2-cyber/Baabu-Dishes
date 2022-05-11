@@ -1,25 +1,30 @@
+// Dart imports:
 import 'dart:math';
-import 'package:chopper/chopper.dart';
-import 'package:flutter/material.dart';
-import 'package:modern_recipe_app/data/models/ingredient.dart';
-import 'package:shared_preferences/shared_preferences.dart';
-import 'package:provider/provider.dart';
 
-import '../../../core/theme/theme.dart';
-import '../../../data/models/recipe.dart';
+// Flutter imports:
+import 'package:flutter/material.dart';
+
+// Package imports:
+import 'package:chopper/chopper.dart';
+import 'package:provider/provider.dart';
+import 'package:shared_preferences/shared_preferences.dart';
+
+// Project imports:
+import '../../data/models/ingredient.dart';
+import '../../core/theme/theme.dart';
+import '../../data/models/recipe.dart';
+import '../../network/model_response.dart';
+import '../../network/recipe_model.dart';
 import '../../network/service_interface.dart';
 import '../recipe_card.dart';
-import 'recipe_details.dart';
 import '../widgets/custom_dropdown.dart';
-import '../../network/recipe_model.dart';
-import '../../network/model_response.dart';
-
+import 'recipe_details.dart';
 
 class RecipeList extends StatefulWidget {
   const RecipeList({Key? key}) : super(key: key);
 
   @override
-  _RecipeListState createState() => _RecipeListState();
+  State<RecipeList> createState() => _RecipeListState();
 }
 
 class _RecipeListState extends State<RecipeList> {

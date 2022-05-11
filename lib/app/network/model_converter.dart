@@ -1,8 +1,12 @@
+// Dart imports:
 import 'dart:convert';
+
+// Package imports:
 import 'package:chopper/chopper.dart';
+
+// Project imports:
 import 'model_response.dart';
 import 'recipe_model.dart';
-
 
 class ModelConverter implements Converter{
   

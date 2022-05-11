@@ -1,9 +1,12 @@
+// Package imports:
 import 'package:chopper/chopper.dart';
 
+// Project imports:
+import 'model_converter.dart';
 import 'model_response.dart';
 import 'recipe_model.dart';
-import 'model_converter.dart';
 import 'service_interface.dart';
+
 part 'recipe_service.chopper.dart';
 
 const String apiKey = '42e9489a8d151c862665c2471e7a75b5';
@@ -12,14 +15,17 @@ const String apiUrl = 'https://api.edamam.com/search';
 
 // Add @ChopperApi() here
 @ChopperApi()
-abstract class RecipeService extends ChopperService implements ServiceInterface {
+abstract class RecipeService
+    extends ChopperService
+    implements ServiceInterface {
   @override
   @Get(path: 'search')
+  // ignore: override_on_non_overriding_member
   Future<Response<Result<APIRecipeQuery>>> queryRecipes(
-      @Query('q') String query,
-      @Query('from') int from,
-      @Query('to') int to,
-      );
+    @Query('q') String query,
+    @Query('from') int from,
+    @Query('to') int to,
+  );
   // Add create()
   static RecipeService create() {
     final client = ChopperClient(
@@ -35,6 +41,7 @@ abstract class RecipeService extends ChopperService implements ServiceInterface 
     return _$RecipeService(client);
   }
 }
+
 // Add _addQuery()
 Request _addQuery(Request req) {
   final params = Map<String, dynamic>.from(req.parameters);

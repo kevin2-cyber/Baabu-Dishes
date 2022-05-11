@@ -1,7 +1,8 @@
+// Package imports:
 import 'package:json_annotation/json_annotation.dart';
 
-import '../../data/models/ingredient.dart';
-
+// Project imports:
+import '../data/models/ingredient.dart';
 
 part 'recipe_model.g.dart';
 
@@ -66,14 +67,14 @@ String getCalories(double? calories) {
   if (calories == null) {
     return 'O KCAL';
   }
-  return calories.floor().toString() + 'KCAL';
+  return '${calories.floor()}KCAL';
 }
 
 String getWeight(double? weight) {
   if(weight == null) {
     return '0g';
   }
-  return weight.floor().toString() + 'g';
+  return '${weight.floor()}g';
 }
 
 // Add @JsonSerializable() class APIIngredients

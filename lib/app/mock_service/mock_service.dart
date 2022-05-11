@@ -1,13 +1,18 @@
+// Dart imports:
 import 'dart:convert';
 import 'dart:math';
 
-import 'package:http/http.dart' as http;
-import 'package:chopper/chopper.dart';
+// Flutter imports:
 import 'package:flutter/services.dart' show rootBundle;
-import '../network/service_interface.dart';
 
+// Package imports:
+import 'package:chopper/chopper.dart';
+import 'package:http/http.dart' as http;
+
+// Project imports:
 import '../network/model_response.dart';
 import '../network/recipe_model.dart';
+import '../network/service_interface.dart';
 
 class MockService implements ServiceInterface{
   late APIRecipeQuery _currentRecipes1;
@@ -20,9 +25,9 @@ class MockService implements ServiceInterface{
   }
 
   void loadRecipes() async {
-    var jsonString = await rootBundle.loadString('assets/recipes1.json');
+    var jsonString = await rootBundle.loadString('assets/json/recipes1.json');
     _currentRecipes1 = APIRecipeQuery.fromJson(jsonDecode(jsonString));
-    jsonString = await rootBundle.loadString('assets/recipes2.json');
+    jsonString = await rootBundle.loadString('assets/json/recipes2.json');
     _currentRecipes2 = APIRecipeQuery.fromJson(jsonDecode(jsonString));
   }
 
