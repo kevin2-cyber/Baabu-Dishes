@@ -15,6 +15,10 @@ class _IntroScreenState extends State<IntroScreen> {
       body: Column(
         children: [
           SvgPicture.asset('assets/svg/diet.svg'),
+          MaterialButton(
+            onPressed: () {},
+            child: Container(),
+          ),
         ],
       ),
     );
