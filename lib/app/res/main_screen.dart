@@ -78,7 +78,6 @@ class _MainScreenState extends State<MainScreen> {
         break;
     }
 
-    bool theme = false;
     return Scaffold(
       bottomNavigationBar: BottomNavigationBar(
         items: [
@@ -104,12 +103,13 @@ class _MainScreenState extends State<MainScreen> {
       ),
       appBar: AppBar(
         elevation: 0,
-        backgroundColor: theme ? AppTheme.kbgColor : AppTheme.kdarkBgColor,
+        backgroundColor: Colors.white,
         systemOverlayStyle: const SystemUiOverlayStyle(
           systemNavigationBarColor: Colors.white,
           statusBarColor: Colors.white,
           statusBarBrightness: Brightness.light,
           statusBarIconBrightness: Brightness.dark,
+
           systemNavigationBarDividerColor: Colors.white,
           //Navigation bar divider color
           systemNavigationBarIconBrightness:
@@ -117,8 +117,7 @@ class _MainScreenState extends State<MainScreen> {
         ),
         title: Text(
           title,
-          style: const TextStyle(
-              fontSize: 20, fontWeight: FontWeight.w500, color: Colors.black),
+          style: AppTheme.darkTextTheme.headline1,
         ),
       ),
       body: IndexedStack(
