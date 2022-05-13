@@ -102,4 +102,8 @@ class AppTheme {
     visualDensity: VisualDensity.adaptivePlatformDensity,
     textTheme: darkTextTheme,
   );
+
+  static final darkAppBarTheme = AppBarTheme(
+    backgroundColor: green,
+  );
 }
